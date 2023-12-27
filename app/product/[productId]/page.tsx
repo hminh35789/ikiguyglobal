@@ -1,11 +1,12 @@
 "use client";
 
 import Container from '@/app/components/Container';
-import { product } from '@/utils/product';
+
 import { useRouter } from 'next/navigation';
 import React from 'react'
 import ProductDetails from './ProductDetails';
 import ListRating from '../ListRating';
+import { products } from '@/utils/products';
 interface IPrams {
     productId?: string;
 }
@@ -13,6 +14,8 @@ interface IPrams {
 const  Product = ({ params } : {params: IPrams}) => {
     console.log('parmas', params);
     const router = useRouter();
+
+    const product = products.find((item) => item.id === params.productId);
    
   return (
     <div className='p-8'>
