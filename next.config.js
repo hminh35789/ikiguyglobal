@@ -4,10 +4,11 @@ const nextConfig = {
         domains: 
         [
             'firebasestorage.googleapis.com',
+            'www.firebasestorage.googleapis.com',
             'google.com',
             'www.google.com',
             'media.vneconomy.vn',
-             'lh3.googleusercontent.com'
+            'lh3.googleusercontent.com'
         ],
       
     },
